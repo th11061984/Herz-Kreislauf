@@ -7,6 +7,8 @@ primary_region = "fra"
 [env]
   PORT = "3000"
   NODE_ENV = "production"
+  # E-Mail-Adresse(n) für den Admin-Bereich (Komma-getrennt)
+  ADMIN_EMAIL = "tara.hoffmann@gmx.net"
 
 [http_service]
   internal_port = 3000

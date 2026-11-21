@@ -8,12 +8,12 @@
     return e;
   };
   const ss = {
-    get(k) { try { return sessionStorage.getItem(k); } catch { return null; } },
-    set(k, v) { try { sessionStorage.setItem(k, v); } catch {} },
-    del(k) { try { sessionStorage.removeItem(k); } catch {} },
+    get(k) { try { return localStorage.getItem(k); } catch { return null; } },
+    set(k, v) { try { localStorage.setItem(k, v); } catch {} },
+    del(k) { try { localStorage.removeItem(k); } catch {} },
   };
 
-  let password = ss.get('quiz.adminPw');
+  let password = ss.get('quiz.adminEmail');
   let state = null;
   let joinUrl = location.origin;
   let peek = false;
@@ -27,11 +27,11 @@
   function auth() {
     socket.emit('admin:auth', password, (res) => {
       if (res && res.ok) {
-        ss.set('quiz.adminPw', password);
+        ss.set('quiz.adminEmail', password);
         $('viewLogin').classList.add('hidden');
         $('viewAdmin').classList.remove('hidden');
       } else {
-        ss.del('quiz.adminPw');
+        ss.del('quiz.adminEmail');
         password = null;
         $('viewAdmin').classList.add('hidden');
         $('viewLogin').classList.remove('hidden');

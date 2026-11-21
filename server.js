@@ -10,16 +10,13 @@ const { loadAllDecks, loadDeck } = require('./decks');
 
 const PORT = Number(process.env.PORT) || 3000;
 const PUBLIC_URL = (process.env.PUBLIC_URL || '').replace(/\/+$/, '');
-let ADMIN_PASSWORD = process.env.ADMIN_PASSWORD;
-if (!ADMIN_PASSWORD) {
-  if (process.env.NODE_ENV === 'production') {
-    ADMIN_PASSWORD = crypto.randomBytes(9).toString('base64url');
-    console.warn(`⚠ ADMIN_PASSWORD ist nicht gesetzt. Einmal-Passwort für diesen Start: ${ADMIN_PASSWORD}`);
-  } else {
-    ADMIN_PASSWORD = 'admin';
-    console.warn('⚠ ADMIN_PASSWORD ist nicht gesetzt – lokal gilt das Passwort "admin".');
-  }
-}
+// Anmeldung im Admin-Bereich nur per E-Mail-Adresse (kein Passwort).
+// Mehrere Adressen mit Komma trennen.
+const ADMIN_EMAILS = (process.env.ADMIN_EMAIL || '')
+  .split(',')
+  .map((e) => e.trim().toLowerCase())
+  .filter(Boolean);
+if (ADMIN_EMAILS.length === 0) console.warn('⚠ ADMIN_EMAIL ist nicht gesetzt – niemand kann sich als Admin anmelden.');
 
 const app = express();
 app.set('trust proxy', true);
@@ -210,8 +207,9 @@ io.on('connection', (socket) => {
   });
 
   // --- Admin ---
-  socket.on('admin:auth', (password, ack) => {
-    if (!timingSafeEqual(password || '', ADMIN_PASSWORD)) return ack && ack({ ok: false });
+  socket.on('admin:auth', (email, ack) => {
+    const given = String(email || '').trim().toLowerCase();
+    if (!given || !ADMIN_EMAILS.some((e) => timingSafeEqual(e, given))) return ack && ack({ ok: false });
     isAdmin = true;
     socket.join('admins');
     ack && ack({ ok: true });

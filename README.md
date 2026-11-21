@@ -4,11 +4,11 @@ Studierende scannen einen QR-Code, geben ihren Namen ein und beantworten live Mu
 Die Dozentin steuert vorne über die Admin-Ansicht, wann eine Frage erscheint und wann die Lösung aufgedeckt wird.
 
 **Es wird nichts dauerhaft gespeichert.** Namen und Antworten liegen nur im Arbeitsspeicher des Servers und
-verschwinden bei einem Neustart. Es gibt keine Konten, nur ein Admin-Passwort.
+verschwinden bei einem Neustart. Es gibt keine Konten: Der Admin-Bereich wird nur mit der freigeschalteten E-Mail-Adresse geöffnet (`ADMIN_EMAIL` in `fly.toml`).
 
 ## Ablauf in der Vorlesung
 
-1. `https://<ihre-app>.fly.dev/admin` öffnen, mit dem Admin-Passwort anmelden, Fragensatz wählen.
+1. `https://<ihre-app>.fly.dev/admin` öffnen, mit der E-Mail-Adresse anmelden, Fragensatz wählen.
 2. Der Beamer zeigt einen großen QR-Code; die Namen der Angemeldeten erscheinen live.
 3. **Start**: die erste Frage erscheint auf allen Handys. Vorne sieht man „x von y haben geantwortet“.
 4. **Auflösen**: die richtige Antwort wird vorne und auf den Handys grün markiert, inklusive Verteilung der Antworten
@@ -52,10 +52,10 @@ npm install
 ```
 
 ```bash
-ADMIN_PASSWORD=geheim npm run dev
+ADMIN_EMAIL=test@example.com npm run dev
 ```
 
-Teilnehmen: http://localhost:3000, Admin: http://localhost:3000/admin. Ohne `ADMIN_PASSWORD` gilt lokal `admin`.
+Teilnehmen: http://localhost:3000, Admin: http://localhost:3000/admin.
 Zum Testen mit dem Handy im selben WLAN die IP des Rechners statt `localhost` verwenden.
 
 ## Deployment auf Fly.io
@@ -68,10 +68,6 @@ fly auth login
 
 ```bash
 fly launch --no-deploy --copy-config --name herz-kreislauf-quiz --region fra
-```
-
-```bash
-fly secrets set ADMIN_PASSWORD='ein-gutes-passwort'
 ```
 
 ```bash
@@ -89,7 +85,7 @@ fly tokens create org -x 999999h
 ```
 
 Den Token in GitHub unter *Settings → Secrets and variables → Actions* als `FLY_API_TOKEN_HERZ` hinterlegen.
-Zusätzlich `ADMIN_PASSWORD` als Secret anlegen. Ab dann wird jeder Push auf den Standard-Branch geprüft und deployt; die App wird beim ersten Mal automatisch angelegt. Manuell starten: Tab *Actions* → „Prüfen & Deployen“ → *Run workflow*.
+Ab dann wird jeder Push auf den Standard-Branch geprüft und deployt; die App wird beim ersten Mal automatisch angelegt. Manuell starten: Tab *Actions* → „Prüfen & Deployen“ → *Run workflow*.
 
 ## Technik
 

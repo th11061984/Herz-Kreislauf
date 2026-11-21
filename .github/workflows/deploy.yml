@@ -27,7 +27,6 @@ jobs:
     concurrency: deploy
     env:
       FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN_HERZ }}
-      ADMIN_PASSWORD: ${{ secrets.ADMIN_PASSWORD }}
     steps:
       - uses: actions/checkout@v4
       - uses: superfly/flyctl-actions/setup-flyctl@master
@@ -38,9 +37,6 @@ jobs:
           if [ -z "$FLY_API_TOKEN" ]; then
             echo "::warning::Secret FLY_API_TOKEN_HERZ ist nicht gesetzt – Deploy übersprungen."
             echo "skip=1" >> "$GITHUB_OUTPUT"
-          fi
-          if [ -z "$ADMIN_PASSWORD" ]; then
-            echo "::warning::Secret ADMIN_PASSWORD fehlt – bitte in GitHub anlegen, sonst gilt ein zufälliges Passwort, das nur in den Fly-Logs steht."
           fi
           echo "app=$(sed -nE 's/^app *= *"([^"]+)".*/\1/p' fly.toml)" >> "$GITHUB_OUTPUT"
 
@@ -53,10 +49,6 @@ jobs:
           else
             flyctl apps create "$APP" --org personal
           fi
-
-      - name: Admin-Passwort setzen
-        if: steps.pre.outputs.skip != '1' && env.ADMIN_PASSWORD != ''
-        run: flyctl secrets set ADMIN_PASSWORD="$ADMIN_PASSWORD" --app "${{ steps.pre.outputs.app }}" --stage
 
       - name: Deploy
         if: steps.pre.outputs.skip != '1'
