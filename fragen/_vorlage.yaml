@@ -1,0 +1,25 @@
+# VORLAGE – Dateien, die mit "_" beginnen, werden nicht geladen.
+# Kopieren Sie diese Datei, z. B. nach "fragen/03-herzzyklus.yaml", und füllen Sie sie aus.
+# Prüfen mit:  npm run check
+
+titel: Titel der Vorlesung (erscheint oben in der App)
+
+fragen:
+  - folie: 1                       # Foliennummer (nur zur Orientierung)
+    frage: Wie lautet die Frage?
+    antworten:                     # 2 bis 10 Antworten, werden A, B, C … genannt
+      - Erste Antwort
+      - Zweite Antwort
+      - Dritte Antwort
+      - Vierte Antwort
+    richtig: B                     # Buchstabe der richtigen Antwort
+    erklaerung: >                  # optional – wird nach dem Auflösen gezeigt
+      Kurze Erklärung, warum B richtig ist.
+
+  - folie: 2
+    frage: Frage mit mehreren richtigen Antworten?
+    antworten:
+      - Antwort A
+      - Antwort B
+      - Antwort C
+    richtig: [A, C]                # mehrere richtige → Teilnehmende dürfen mehrere wählen

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Live-Quiz</title>
+  <meta name="theme-color" content="#ffad31">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand-mark">?</div>
+      <div class="brand-text"><strong>Live-Quiz</strong><span id="deckTitle">Vorlesung</span></div>
+    </div>
+    <div class="topbar-right">
+      <span id="whoami" class="muted hidden"></span>
+      <span id="conn" class="conn off" title="Verbindung"></span>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. Namen eingeben -->
+    <section id="viewJoin" class="hidden">
+      <div class="eyebrow">Willkommen</div>
+      <h1>Schön, dass Sie dabei sind!</h1>
+      <p>Bitte geben Sie Ihren Namen ein, um an der Live-Abfrage teilzunehmen.</p>
+      <form id="joinForm" class="card peach stack" autocomplete="off">
+        <div>
+          <label for="nameInput">Ihr Name</label>
+          <input id="nameInput" type="text" maxlength="40" placeholder="z. B. Anna M." required autofocus>
+        </div>
+        <button class="btn block big" type="submit">Teilnehmen</button>
+        <p id="joinError" class="error hidden"></p>
+      </form>
+      <p class="muted">Ihre Antworten werden nicht dauerhaft gespeichert.</p>
+    </section>
+
+    <!-- 2. Warten -->
+    <section id="viewWait" class="hidden">
+      <div class="waiting">
+        <div class="pulse"></div>
+        <h2 id="waitTitle">Sie sind angemeldet</h2>
+        <p id="waitText">Gleich geht es los – die erste Frage erscheint hier automatisch.</p>
+      </div>
+    </section>
+
+    <!-- 3. Frage -->
+    <section id="viewQuestion" class="hidden">
+      <div class="eyebrow" id="qMeta"></div>
+      <h1 id="qText"></h1>
+      <p id="qHint" class="muted"></p>
+      <ul id="qOptions" class="options"></ul>
+      <div id="qStatus"></div>
+    </section>
+
+    <!-- 4. Ende -->
+    <section id="viewEnd" class="hidden">
+      <div class="waiting">
+        <h2>Vielen Dank fürs Mitmachen!</h2>
+        <p id="endText"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">Live-Quiz · Antworten bleiben nur während der Sitzung im Speicher</footer>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/participant.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admin · Live-Quiz</title>
+  <meta name="robots" content="noindex">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/admin.css">
+</head>
+<body class="admin">
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand-mark">?</div>
+      <div class="brand-text"><strong>Live-Quiz · Dozentin</strong><span id="deckTitle">Vorlesung</span></div>
+    </div>
+    <div class="topbar-right">
+      <span id="conn" class="conn off" title="Verbindung"></span>
+    </div>
+  </header>
+
+  <main>
+    <section id="viewLogin" class="login">
+      <div class="eyebrow">Admin-Bereich</div>
+      <h1>Anmelden</h1>
+      <form id="loginForm" class="card peach stack">
+        <div>
+          <label for="pw">Passwort</label>
+          <input id="pw" type="password" autocomplete="current-password" required autofocus>
+        </div>
+        <button class="btn block" type="submit">Anmelden</button>
+        <p id="loginError" class="error hidden">Passwort falsch.</p>
+      </form>
+    </section>
+
+    <section id="viewAdmin" class="hidden" style="display:flex;flex-direction:column;flex:1">
+      <div class="controls">
+        <select id="deckSelect" title="Fragensatz"></select>
+        <span class="pill"><b id="pCount">0</b> angemeldet</span>
+        <span class="pill hidden" id="aCountPill"><b id="aCount">0</b> geantwortet</span>
+        <select id="jumpSelect" title="Zu Frage springen"></select>
+        <span class="spacer"></span>
+        <button class="btn ghost" id="btnPeek" title="Lösung nur für Sie markieren (gestrichelt)">Lösung vorab</button>
+        <button class="btn ghost" id="btnFull" title="Vollbild (F)">Vollbild</button>
+        <button class="btn ghost" id="btnMenu">⋯</button>
+        <button class="btn outline" id="btnPrev" title="Zurück (←)">Zurück</button>
+        <button class="btn next" id="btnNext" title="Weiter (→, Leertaste)">Weiter</button>
+      </div>
+      <div class="controls hidden" id="menu">
+        <button class="btn ghost" id="btnRestart">Von vorne beginnen (Antworten löschen)</button>
+        <button class="btn ghost" id="btnClear">Alle Teilnehmenden abmelden</button>
+        <span class="spacer"></span>
+        <span class="muted">Tasten: <kbd>→</kbd>/<kbd>Leertaste</kbd> weiter · <kbd>←</kbd> zurück · <kbd>F</kbd> Vollbild · <kbd>L</kbd> Lösung vorab</span>
+      </div>
+      <div class="stage" id="stage"></div>
+    </section>
+  </main>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/admin.js"></script>
+</body>
+</html>
