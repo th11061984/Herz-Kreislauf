@@ -26,7 +26,7 @@ jobs:
     runs-on: ubuntu-latest
     concurrency: deploy
     env:
-      FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
+      FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN_HERZ }}
       ADMIN_PASSWORD: ${{ secrets.ADMIN_PASSWORD }}
     steps:
       - uses: actions/checkout@v4
@@ -36,8 +36,11 @@ jobs:
         id: pre
         run: |
           if [ -z "$FLY_API_TOKEN" ]; then
-            echo "::warning::FLY_API_TOKEN ist nicht gesetzt – Deploy übersprungen."
+            echo "::warning::Secret FLY_API_TOKEN_HERZ ist nicht gesetzt – Deploy übersprungen."
             echo "skip=1" >> "$GITHUB_OUTPUT"
+          fi
+          if [ -z "$ADMIN_PASSWORD" ]; then
+            echo "::warning::Secret ADMIN_PASSWORD fehlt – bitte in GitHub anlegen, sonst gilt ein zufälliges Passwort, das nur in den Fly-Logs steht."
           fi
           echo "app=$(sed -nE 's/^app *= *"([^"]+)".*/\1/p' fly.toml)" >> "$GITHUB_OUTPUT"
 

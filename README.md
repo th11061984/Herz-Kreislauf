@@ -88,7 +88,7 @@ Wer eine eigene Domain nutzt, kann `PUBLIC_URL` setzen; sonst wird die Adresse f
 fly tokens create org -x 999999h
 ```
 
-Den Token in GitHub unter *Settings → Secrets and variables → Actions* als `FLY_API_TOKEN` hinterlegen.
+Den Token in GitHub unter *Settings → Secrets and variables → Actions* als `FLY_API_TOKEN_HERZ` hinterlegen.
 Zusätzlich `ADMIN_PASSWORD` als Secret anlegen. Ab dann wird jeder Push auf den Standard-Branch geprüft und deployt; die App wird beim ersten Mal automatisch angelegt. Manuell starten: Tab *Actions* → „Prüfen & Deployen“ → *Run workflow*.
 
 ## Technik
