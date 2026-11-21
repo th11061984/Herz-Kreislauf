@@ -2,7 +2,6 @@ name: Prüfen & Deployen
 
 on:
   push:
-    branches: [main]
   pull_request:
   workflow_dispatch:
 
@@ -20,18 +19,47 @@ jobs:
 
   deploy:
     needs: check
-    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    # Deployt bei Push auf den Standard-Branch des Repos oder per Knopfdruck ("Run workflow")
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      (github.event_name == 'push' && github.ref == format('refs/heads/{0}', github.event.repository.default_branch))
     runs-on: ubuntu-latest
     concurrency: deploy
+    env:
+      FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
+      ADMIN_PASSWORD: ${{ secrets.ADMIN_PASSWORD }}
     steps:
       - uses: actions/checkout@v4
       - uses: superfly/flyctl-actions/setup-flyctl@master
-      - name: Deploy (nur wenn FLY_API_TOKEN gesetzt ist)
-        env:
-          FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
+
+      - name: Secrets prüfen
+        id: pre
         run: |
           if [ -z "$FLY_API_TOKEN" ]; then
-            echo "FLY_API_TOKEN ist nicht gesetzt – Deploy übersprungen."
-            exit 0
+            echo "::warning::FLY_API_TOKEN ist nicht gesetzt – Deploy übersprungen."
+            echo "skip=1" >> "$GITHUB_OUTPUT"
           fi
-          flyctl deploy --remote-only --ha=false
+          echo "app=$(sed -nE 's/^app *= *"([^"]+)".*/\1/p' fly.toml)" >> "$GITHUB_OUTPUT"
+
+      - name: App auf Fly.io anlegen (nur beim ersten Mal)
+        if: steps.pre.outputs.skip != '1'
+        run: |
+          APP="${{ steps.pre.outputs.app }}"
+          if flyctl apps list --json | grep -q "\"Name\": *\"$APP\""; then
+            echo "App $APP existiert bereits."
+          else
+            flyctl apps create "$APP" --org personal
+          fi
+
+      - name: Admin-Passwort setzen
+        if: steps.pre.outputs.skip != '1' && env.ADMIN_PASSWORD != ''
+        run: flyctl secrets set ADMIN_PASSWORD="$ADMIN_PASSWORD" --app "${{ steps.pre.outputs.app }}" --stage
+
+      - name: Deploy
+        if: steps.pre.outputs.skip != '1'
+        run: flyctl deploy --remote-only --ha=false --app "${{ steps.pre.outputs.app }}"
+
+      - name: Adresse anzeigen
+        if: steps.pre.outputs.skip != '1'
+        run: |
+          echo "::notice::Live unter https://${{ steps.pre.outputs.app }}.fly.dev  (Admin: /admin)"

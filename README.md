@@ -82,14 +82,14 @@ Wichtig: Der Zustand liegt im Speicher, daher muss **genau eine Maschine** laufe
 Die Maschine legt sich schlafen, wenn niemand verbunden ist, und startet beim ersten Aufruf in wenigen Sekunden.
 Wer eine eigene Domain nutzt, kann `PUBLIC_URL` setzen; sonst wird die Adresse für den QR-Code automatisch erkannt.
 
-### Automatisch deployen bei jedem Push auf `main`
+### Automatisch deployen über GitHub
 
 ```bash
-fly tokens create deploy -x 999999h
+fly tokens create org -x 999999h
 ```
 
 Den Token in GitHub unter *Settings → Secrets and variables → Actions* als `FLY_API_TOKEN` hinterlegen.
-Ab dann wird jeder Push auf `main` geprüft und deployt.
+Zusätzlich `ADMIN_PASSWORD` als Secret anlegen. Ab dann wird jeder Push auf den Standard-Branch geprüft und deployt; die App wird beim ersten Mal automatisch angelegt. Manuell starten: Tab *Actions* → „Prüfen & Deployen“ → *Run workflow*.
 
 ## Technik
 
