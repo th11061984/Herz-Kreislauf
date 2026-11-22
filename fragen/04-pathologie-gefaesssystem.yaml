@@ -1,0 +1,196 @@
+# Fragen zu: 4. Pathologie Gefäßsystem (Folie = Seitenzahl im Skript)
+titel: "4. Pathologie Gefäßsystem"
+
+fragen:
+  - folie: 1
+    frage: Ab welchem Wert spricht man von einer Hypertonie Grad 2?
+    antworten:
+      - Ab 140/90 mmHg
+      - Ab 160/100 mmHg
+      - Ab 180/110 mmHg
+      - Ab 130/85 mmHg
+    richtig: B
+    erklaerung: "Merke: Systole +20, Diastole +10 – Grad 1 ab 140/90, Grad 2 ab 160/100, Grad 3 ab 180/110 mmHg."
+
+  - folie: 1
+    frage: Wie häufig ist die Ursache einer Hypertonie unbekannt?
+    antworten:
+      - In ca. 10 %
+      - In ca. 50 %
+      - In ca. 90 %
+      - Nie
+    richtig: C
+
+  - folie: 2
+    frage: Welche Symptome verursacht eine Hypertonie meistens?
+    antworten:
+      - Starke Kopfschmerzen
+      - Nasenbluten
+      - Meist keine
+      - Brustschmerzen
+    richtig: C
+    erklaerung: Die übrigen Beschwerden sind möglich, aber uncharakteristisch – deshalb wird Hypertonie oft spät entdeckt.
+
+  - folie: 2
+    frage: Wie sollte der Blutdruck zur Diagnose einer Hypertonie gemessen werden?
+    antworten:
+      - Einmalig direkt nach dem Treppensteigen
+      - 3 × im Abstand von 1–2 Minuten, an mindestens 2 Zeitpunkten, nach 5 Minuten Sitzen, Arm auf Herzhöhe
+      - Nur im Liegen mit hochgelagertem Arm
+      - Nur einmal am Abend
+    richtig: B
+
+  - folie: 3
+    frage: Was kennzeichnet ein Aneurysma dissecans?
+    antworten:
+      - Alle 3 Wandschichten sind ausgesackt.
+      - Ein Riss zwischen Intima und Media – Blut fließt in den Spaltraum.
+      - Ein bindegewebig umgebautes Hämatom nach Einriss der Arterie
+      - Eine Aussackung einer Vene
+    richtig: B
+    erklaerung: Alle 3 Schichten = Aneurysma verum, umgebautes Hämatom = Aneurysma spurium.
+
+  - folie: 3
+    frage: Ab welchem Wert spricht man von einer arteriellen Hypotonie?
+    antworten:
+      - Unter 120/80 mmHg
+      - Unter 110/70 mmHg
+      - Unter 100/60 mmHg
+      - Unter 90/40 mmHg
+    richtig: C
+
+  - folie: 4
+    frage: Welche Fettstoffwechsel-Konstellation begünstigt eine Arteriosklerose?
+    antworten:
+      - LDL erhöht, HDL erniedrigt
+      - LDL erniedrigt, HDL erhöht
+      - LDL und HDL erniedrigt
+      - Nur HDL erhöht
+    richtig: A
+
+  - folie: 4
+    frage: Welche sind Hauptrisikofaktoren der Arteriosklerose?
+    antworten:
+      - Hypertonie
+      - Nikotinabusus
+      - Diabetes mellitus
+      - Hypotonie
+    richtig: [A, B, C]
+    erklaerung: Dazu kommt die Hyperlipidämie. Merke – Arteriosklerose verursacht Hypertonie und Hypertonie verursacht Arteriosklerose.
+
+  - folie: 5
+    frage: Ein Patient mit pAVK hat eine beschwerdefreie Gehstrecke von 150 m. Welches Stadium liegt vor?
+    antworten:
+      - Stadium 1
+      - Stadium 2a
+      - Stadium 2b
+      - Stadium 3
+    richtig: C
+    erklaerung: 2a über 200 m, 2b unter 200 m. Stadium 3 = Ruheschmerz, Stadium 4 = Nekrose/Gangrän.
+
+  - folie: 6
+    frage: Wie lagert man das Bein bei einem akuten arteriellen Verschluss?
+    antworten:
+      - Hochlagern und kühlen
+      - Tief lagern, in Watte packen, weder kühlen noch wärmen
+      - Hochlagern und wärmen
+      - Massieren, um den Embolus zu lösen
+    richtig: B
+    erklaerung: 6 × P – Notfall, 112! Die Tieflagerung erhält eine noch mögliche Durchblutung.
+
+  - folie: 6
+    frage: Wozu dient die Ratschow-Lagerungsprobe?
+    antworten:
+      - Nachweis einer tiefen Beinvenenthrombose
+      - Funktionsprüfung bei chronischer pAVK
+      - Diagnose von Varizen
+      - Messung des Blutdrucks am Bein
+    richtig: B
+    erklaerung: Das betroffene Bein ist blasser, die Venen füllen sich schlechter.
+
+  - folie: 7
+    frage: Welche Farbabfolge beschreibt das Trikolore-Phänomen beim Raynaud-Syndrom?
+    antworten:
+      - Rot – blau – weiß
+      - Weiß – blau – rot
+      - Blau – weiß – rot
+      - Weiß – rot – gelb
+    richtig: B
+
+  - folie: 7
+    frage: Womit beginnt eine Migräne häufig?
+    antworten:
+      - Mit Sehstörungen wie Aura, Flimmern, Tunnelblick
+      - Mit Fieber
+      - Mit Schmerzen beim Kauen
+      - Mit Wadenschmerzen
+    richtig: A
+    erklaerung: Pathomechanismus – erst Vasokonstriktion, dann Vasodilatation der Hirnarterien.
+
+  - folie: 8
+    frage: Was ist die gefürchtete Komplikation einer unbehandelten Arteriitis temporalis?
+    antworten:
+      - Erblindung
+      - Varikosis
+      - Aortenisthmusstenose
+      - Lungenödem
+    richtig: A
+    erklaerung: Häufig assoziiert mit Polymyalgia rheumatica. Typisch – halbseitiger Schläfenkopfschmerz, Schmerz beim Kauen.
+
+  - folie: 9
+    frage: Was ist die Hauptursache von Varizen?
+    antworten:
+      - Arteriosklerose
+      - Angeborene Bindegewebsschwäche
+      - Bakterielle Infektion
+      - Hypertonie
+    richtig: B
+    erklaerung: Begünstigend wirken stehende/sitzende Tätigkeit, Adipositas, Schwangerschaft, Rechtsherzinsuffizienz.
+
+  - folie: 9
+    frage: Was ist eine Thrombophlebitis?
+    antworten:
+      - Thrombose der tiefen Beinvenen
+      - Entzündung oberflächlich liegender Venen
+      - Verschluss einer Beinarterie
+      - Aussackung einer Arterie
+    richtig: B
+
+  - folie: 10
+    frage: Welche drei Faktoren bilden die Virchow-Trias?
+    antworten:
+      - Veränderung der Blutzusammensetzung
+      - Veränderung der Blutströmung
+      - Gefäßwandschäden
+      - Erhöhter Blutdruck
+    richtig: [A, B, C]
+
+  - folie: 11
+    frage: Welches Zeichen spricht für eine tiefe Beinvenenthrombose?
+    antworten:
+      - Abgeschwächte Fußpulse
+      - Pratt-Warnvenen
+      - Positive Ratschow-Lagerungsprobe
+      - Kaltes, blasses Bein
+    richtig: B
+    erklaerung: Abgeschwächte Pulse, Ratschow-Probe und kaltes blasses Bein gehören zur pAVK. Bei der Thrombose sind die Pulse vorhanden, das Bein ist warm und gerötet.
+
+  - folie: 11
+    frage: Was prüft man mit dem Meyer-Zeichen?
+    antworten:
+      - Schmerz beim Abknicken des Fußes nach oben
+      - Schmerz bei Druck auf die Fußsohle
+      - Wadenkompressionsschmerz
+      - Gehstrecke bis zum Schmerz
+    richtig: C
+    erklaerung: Homans = Fuß fußrückenwärts abknicken, Payr = Druck auf die Fußsohle. Achtung – der Thrombus könnte sich lösen!
+
+  - folie: 12
+    frage: Wo befindet sich ein venöses Ulcus cruris meistens?
+    antworten:
+      - An der Ferse
+      - An den Zehen
+      - Am medialen Unterschenkel bzw. Innenknöchel
+      - Am Oberschenkel
+    richtig: C
+    erklaerung: Das arterielle Ulcus cruris liegt dagegen an Druckstellen wie Ferse und Zehen.

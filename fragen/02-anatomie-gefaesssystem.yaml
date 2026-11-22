@@ -1,0 +1,129 @@
+# Fragen zu: 2. Anatomie Gefäßsystem (Folie = Seitenzahl im Skript)
+titel: "2. Anatomie Gefäßsystem"
+
+fragen:
+  - folie: 1
+    frage: Welche Gefäße steuern über Ringmuskeln ihre Weite und dienen so der Blutdruckregulation?
+    antworten:
+      - Kapillaren
+      - Arteriolen
+      - Venolen
+      - Große Venen
+    richtig: B
+
+  - folie: 1
+    frage: Wie ist die Wand einer Arterie aufgebaut (von innen nach außen)?
+    antworten:
+      - Adventitia – Media – Intima
+      - Intima – Media – Adventitia
+      - Media – Intima – Adventitia
+      - Endokard – Myokard – Epikard
+    richtig: B
+    erklaerung: Herznahe Arterien haben in der Media viele elastische Fasern (Windkesselfunktion).
+
+  - folie: 1
+    frage: An welcher Arterie wird der Blutdruck in der Regel gemessen und an welcher der Puls getastet?
+    antworten:
+      - Blutdruck an der A. radialis, Puls an der A. brachialis
+      - Blutdruck an der A. brachialis, Puls an der A. radialis
+      - Beides an der A. carotis communis
+      - Beides an der A. femoralis
+    richtig: B
+
+  - folie: 2
+    frage: Welche Arterien gehen aus dem Truncus coeliacus hervor?
+    antworten:
+      - A. lienalis
+      - A. gastrica sinistra
+      - A. hepatica communis
+      - Aa. renales
+    richtig: [A, B, C]
+    erklaerung: Die Nierenarterien gehen direkt von der Bauchaorta ab.
+
+  - folie: 3
+    frage: Welcher Gefäßstamm geht vom Aortenbogen ab und teilt sich in A. subclavia dextra und A. carotis communis dextra?
+    antworten:
+      - Truncus coeliacus
+      - Truncus pulmonalis
+      - Truncus brachiocephalicus
+      - A. mesenterica superior
+    richtig: C
+
+  - folie: 3
+    frage: Was versorgt die A. mesenterica superior?
+    antworten:
+      - Milz und Pankreas
+      - Den gesamten Dünndarm und 2/3 des Dickdarms
+      - Colon descendens, Sigmoid und Rektum
+      - Die Nieren
+    richtig: B
+    erklaerung: Die A. mesenterica inferior versorgt Colon descendens, Sigmoid und Rektum.
+
+  - folie: 4
+    frage: Wo tastet man den Puls der A. dorsalis pedis?
+    antworten:
+      - Hinter dem inneren Knöchel
+      - In der Kniekehle
+      - Obere Fußrückenmitte
+      - Mediales Drittel des Leistenbandes
+    richtig: C
+    erklaerung: Hinter dem Innenknöchel liegt die A. tibialis posterior, in der Kniekehle die A. poplitea, an der Leiste die A. femoralis.
+
+  - folie: 4
+    frage: Welche Aussage zu den Venen trifft zu?
+    antworten:
+      - Herznahe Venen haben besonders viele Venenklappen.
+      - Ihre Adventitia ist dicker als bei den Arterien.
+      - Ihre Media ist stärker ausgeprägt als bei den Arterien.
+      - Sie gehören zum Hochdrucksystem.
+    richtig: B
+    erklaerung: Herznahe Venen haben keine Klappen; die Media ist schwächer als bei Arterien; Venen gehören zum Niederdrucksystem.
+
+  - folie: 5
+    frage: Wie viel des gesamten Blutes befindet sich im venösen System?
+    antworten:
+      - 1/4
+      - 1/3
+      - 1/2
+      - 2/3
+    richtig: D
+
+  - folie: 5
+    frage: Welche Vene führt als einzige (zusammen mit der A. hepatica) in die Leber hinein?
+    antworten:
+      - V. cava inferior
+      - V. portae hepatis
+      - V. jugularis interna
+      - V. renalis
+    richtig: B
+    erklaerung: Die Pfortader sammelt das Blut aus allen unpaaren Organen des Bauchraums.
+
+  - folie: 6
+    frage: Die Blutdruckmanschette ist für den Armumfang zu schmal. Wie fällt der Messwert aus?
+    antworten:
+      - Falsch zu hoch
+      - Falsch zu niedrig
+      - Korrekt
+      - Systolisch zu hoch, diastolisch zu niedrig
+    richtig: A
+    erklaerung: Eine zu breite Manschette ergibt dagegen einen falsch zu niedrigen Wert.
+
+  - folie: 6
+    frage: Wo befinden sich die Barorezeptoren, die den Blutdruck messen?
+    antworten:
+      - Im Sinusknoten und im AV-Knoten
+      - Im Sinus caroticus und im Aortenbogen
+      - In der Medulla oblongata
+      - In den Nierenarterien
+    richtig: B
+    erklaerung: Sie melden den Blutdruck an die Medulla oblongata, die über das vegetative Nervensystem gegensteuert.
+
+  - folie: 7
+    frage: Welche sind sichere Todeszeichen?
+    antworten:
+      - Leichenstarre
+      - Totenflecke
+      - Lichtstarre Pupillen
+      - Fehlender Puls
+    richtig: [A, B]
+    erklaerung: Sichere Todeszeichen sind Leichenstarre, Fäulnisgeruch und Totenflecke. Lichtstarre Pupillen und fehlender Puls sind unsichere Zeichen (klinischer Tod).

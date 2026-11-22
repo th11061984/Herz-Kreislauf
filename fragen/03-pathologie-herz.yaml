@@ -1,0 +1,287 @@
+# Fragen zu: 3. Pathologie Herz mit Tabelle Herzfehler (Folie = Seitenzahl im Skript)
+titel: "3. Pathologie Herz"
+
+fragen:
+  - folie: 1
+    frage: Welche Zeichen entstehen durch chronischen Sauerstoffmangel über Jahre?
+    antworten:
+      - Trommelschlegelfinger
+      - Uhrglasnägel
+      - Polyglobulie
+      - Bradykardie
+    richtig: [A, B, C]
+    erklaerung: Akuter O₂-Mangel führt eher zu Tachykardie – das Herz kompensiert, indem es schneller schlägt.
+
+  - folie: 2
+    frage: Welches Symptom spricht für ein Rückwärtsversagen des LINKEN Herzens?
+    antworten:
+      - Beinödeme
+      - Aszites
+      - Lungenödem mit schaumig-rötlichem Sputum
+      - Gestaute Halsvenen
+    richtig: C
+    erklaerung: Beim Linksherz staut das Blut in die Lunge zurück. Beinödeme, Aszites und gestaute Halsvenen sprechen für eine Rechtsherzinsuffizienz.
+
+  - folie: 2
+    frage: Warum kommt es bei Herzinsuffizienz zur Nykturie?
+    antworten:
+      - Die Niere filtert nachts mehr Salz.
+      - Im Liegen wird das Herz entlastet, pumpt besser und Wasser aus dem Gewebe wird abtransportiert.
+      - Nachts wird weniger getrunken.
+      - Diuretika wirken nur nachts.
+    richtig: B
+
+  - folie: 3
+    frage: Was bedeutet NYHA-Stadium 3?
+    antworten:
+      - Beschwerdefrei, normal belastbar
+      - Beschwerden bei starker körperlicher Belastung
+      - Beschwerden bei leichter körperlicher Belastung
+      - Beschwerden in Ruhe
+    richtig: C
+
+  - folie: 3
+    frage: Welche Virusinfektion der Mutter in der Schwangerschaft kann einen angeborenen Herzfehler verursachen?
+    antworten:
+      - Röteln
+      - Herpes zoster
+      - Influenza
+      - Hepatitis A
+    richtig: A
+
+  - folie: 4
+    frage: Wann zeigen sich kleine angeborene Herzfehler oft erst?
+    antworten:
+      - Unmittelbar nach der Geburt
+      - Im Kleinkindalter
+      - Um das 30./40. Lebensjahr
+      - Erst nach dem 70. Lebensjahr
+    richtig: C
+    erklaerung: Die Fehler sind ggf. so klein, dass sie im Kindes- und Jugendalter nicht bemerkt werden.
+
+  - folie: 5
+    frage: Welcher Befund ist typisch für einen persistierenden Ductus arteriosus botalli?
+    antworten:
+      - Spätsystolischer Klick
+      - Diastolisch-systolisches Maschinengeräusch am 2. ICR links
+      - Paukender 1. Herzton
+      - Lederknarren
+    richtig: B
+    erklaerung: Dazu kommt eine große Blutdruckamplitude.
+
+  - folie: 5
+    frage: Welcher Bestandteil der Fallot-Tetralogie bestimmt das klinische Bild?
+    antworten:
+      - Ventrikelseptumdefekt
+      - Reitende Aorta
+      - Rechtsherzhypertrophie
+      - Pulmonalstenose
+    richtig: D
+    erklaerung: Das Blut weicht über den VSD in die linke Kammer aus – venöses Blut gelangt in den großen Kreislauf (blue babies, Hockstellung).
+
+  - folie: 6
+    frage: "Große Blutdruckamplitude, pulssynchrones Kopfnicken, Wasserhammerpuls: Welcher Herzfehler liegt vor?"
+    antworten:
+      - Aortenstenose
+      - Aorteninsuffizienz
+      - Mitralstenose
+      - Pulmonalstenose
+    richtig: B
+    erklaerung: Diastolikum am 2. ICR rechts. Die Aortenstenose hat dagegen eine kleine Blutdruckamplitude.
+
+  - folie: 6
+    frage: Welche Befunde sind typisch für eine Mitralstenose?
+    antworten:
+      - Paukender 1. Herzton
+      - Mitralbäckchen
+      - Systolikum mit Fortleitung in die Axilla
+      - Diastolikum am 4. ICR links parasternal
+    richtig: [A, B, D]
+    erklaerung: Das Systolikum mit Fortleitung in die Axilla gehört zur Mitralinsuffizienz.
+
+  - folie: 7
+    frage: "Obere Körperhälfte: Hypertonie, warme rote Haut – untere Körperhälfte: Hypotonie, kalte blasse Haut. Woran denken Sie?"
+    antworten:
+      - Aorteninsuffizienz
+      - Aortenisthmusstenose
+      - Trikuspidalstenose
+      - Mitralprolaps
+    richtig: B
+    erklaerung: Verengung der Aorta meist nach den 3 Abgängen des Aortenbogens.
+
+  - folie: 7
+    frage: Welcher Auskultationsbefund ist typisch für einen Mitralprolaps?
+    antworten:
+      - Maschinengeräusch
+      - Spätsystolischer Klick
+      - Abgeschwächte Herztöne
+      - Lederknarren
+    richtig: B
+    erklaerung: Komplikation des Mitralprolaps ist die Mitralklappeninsuffizienz.
+
+  - folie: 8
+    frage: Welche Infektion geht dem rheumatischen Fieber am häufigsten voraus?
+    antworten:
+      - Virale Bronchitis
+      - Angina tonsillaris durch Streptokokken
+      - Harnwegsinfekt durch E. coli
+      - Pilzinfektion der Haut
+    richtig: B
+    erklaerung: In ca. 90 % eine Streptokokken-Angina, meist zwischen dem 3. und 16. Lebensjahr.
+
+  - folie: 9
+    frage: Welche Herzklappe ist beim rheumatischen Fieber am häufigsten betroffen?
+    antworten:
+      - Mitralklappe
+      - Aortenklappe
+      - Trikuspidalklappe
+      - Pulmonalklappe
+    richtig: A
+    erklaerung: Mitralklappe ca. 80 %, Aortenklappe ca. 20 %.
+
+  - folie: 9
+    frage: Bei welcher Gelegenheit kann es typischerweise zu einer bakteriellen Endokarditis an einer vorgeschädigten Klappe kommen?
+    antworten:
+      - Bei einer Zahnbehandlung
+      - Bei einer Blutdruckmessung
+      - Bei einem EKG
+      - Nach einer Mahlzeit
+    richtig: A
+    erklaerung: "Bakteriämie z. B. mit Streptococcus viridans – deshalb Prophylaxe: Antibiotika vor jedem Zahnarztbesuch."
+
+  - folie: 10
+    frage: Linsengroße, blau-rote Knötchen an Fingern und Zehen bei hohem Fieber – welche Erkrankung?
+    antworten:
+      - Rheumatisches Fieber
+      - Bakterielle Endokarditis
+      - Perikarditis
+      - Raynaud-Syndrom
+    richtig: B
+    erklaerung: Osler-Knötchen entstehen durch Mikroembolien bei bakterieller Endokarditis.
+
+  - folie: 11
+    frage: Welcher Auskultationsbefund ist typisch für die Perikarditis sicca?
+    antworten:
+      - Lederknarren
+      - Abgeschwächte bis aufgehobene Herztöne
+      - Maschinengeräusch
+      - Paukender 1. Herzton
+    richtig: A
+    erklaerung: Fibrin im Perikardspalt verursacht Reibung. Abgeschwächte Herztöne gehören zur Perikarditis exsudativa.
+
+  - folie: 11
+    frage: Was ist die gefürchtete Komplikation einer Myokarditis?
+    antworten:
+      - Plötzlicher Herztod, v. a. bei körperlicher Belastung
+      - Aortenisthmusstenose
+      - Varikosis
+      - Hypertensive Krise
+    richtig: A
+
+  - folie: 12
+    frage: Welche Herzform zeigt das Röntgenbild bei einer Perikarditis exsudativa?
+    antworten:
+      - Zottenherz
+      - Panzerherz
+      - Bocksbeutelform
+      - Holzschuhform
+    richtig: C
+    erklaerung: Zottenherz = Perikarditis sicca, Panzerherz = chronisch-konstriktive Perikarditis.
+
+  - folie: 12
+    frage: Was unterscheidet die stabile von der instabilen Angina pectoris?
+    antworten:
+      - Bei der stabilen verschwinden die Beschwerden in Ruhe.
+      - Bei der stabilen treten die Beschwerden nur nachts auf.
+      - Die instabile ist immer schmerzfrei.
+      - Es gibt keinen Unterschied.
+    richtig: A
+
+  - folie: 13
+    frage: Was unterscheidet den Myokardinfarkt von der Angina pectoris?
+    antworten:
+      - Beim Infarkt ist die Ischämie irreversibel mit Nekrose.
+      - Beim Infarkt ist die Ischämie reversibel.
+      - Die Angina pectoris wird nie durch Arteriosklerose verursacht.
+      - Bei der Angina pectoris kommt es immer zum Zelltod.
+    richtig: A
+
+  - folie: 13
+    frage: Bei welchen Patienten fehlen die Schmerzen beim Herzinfarkt besonders häufig?
+    antworten:
+      - Bei Kindern
+      - Bei Diabetikern und älteren Menschen
+      - Bei Sportlern
+      - Bei Rauchern
+    richtig: B
+    erklaerung: Ca. 20 % der Infarkte verlaufen ohne Schmerzen. Bei Frauen oft nur Oberbauchschmerzen und Übelkeit.
+
+  - folie: 14
+    frage: Welche Laborwerte sind herzmuskelspezifisch?
+    antworten:
+      - Troponin T
+      - CK-MB
+      - Myoglobin
+      - CK (Creatinkinase)
+    richtig: [A, B]
+    erklaerung: CK und Myoglobin kommen in jedem Muskel vor.
+
+  - folie: 14
+    frage: Wie lagert man einen Patienten mit Herzinfarkt, der bei Bewusstsein ist?
+    antworten:
+      - Flach auf dem Rücken
+      - Beine hoch (Schocklage)
+      - Oberkörper hochlagern
+      - Stabile Seitenlage
+    richtig: C
+    erklaerung: Zur Herzentlastung. Bei Bewusstlosigkeit stabile Seitenlage, ohne Atmung Reanimation.
+
+  - folie: 15
+    frage: Was entspricht im EKG der Kammererregung?
+    antworten:
+      - P-Welle
+      - QRS-Komplex
+      - T-Welle
+      - PQ-Strecke
+    richtig: B
+    erklaerung: P = Vorhoferregung, T = Erregungsrückbildung.
+
+  - folie: 16
+    frage: Was versteht man beim Vorhofflimmern unter einem Pulsdefizit?
+    antworten:
+      - Der Puls ist an beiden Armen unterschiedlich.
+      - Differenz zwischen Radialispuls und der am Herzen auskultierten Herzfrequenz
+      - Der Puls ist gar nicht tastbar.
+      - Der Puls ist langsamer als 60/min.
+    richtig: B
+    erklaerung: Nur jede 2. oder 3. Erregung wird auf die Kammer übertragen – deshalb überlebt der Patient.
+
+  - folie: 16
+    frage: Was ist eine physiologische Ursache einer Bradykardie?
+    antworten:
+      - Fieber
+      - Hyperthyreose
+      - Ausdauersport
+      - Anämie
+    richtig: C
+    erklaerung: Fieber, Hyperthyreose und Anämie verursachen eine Tachykardie.
+
+  - folie: 17
+    frage: Was kennzeichnet den AV-Block 3. Grades?
+    antworten:
+      - Die Überleitung ist nur verzögert und wird nicht bemerkt.
+      - Nur jede 2. oder 3. Erregung wird übergeleitet.
+      - Vorhöfe und Kammern schlagen unabhängig voneinander.
+      - Der Sinusknoten schlägt schneller.
+    richtig: C
+    erklaerung: Das His-Bündel übernimmt als Ersatzzentrum. Gefürchtet ist der Adam-Stokes-Anfall.
+
+  - folie: 17
+    frage: Nach wie vielen Sekunden Asystolie treten beim Adam-Stokes-Anfall Krämpfe auf (Fehldiagnose Epilepsie)?
+    antworten:
+      - 3–5 Sekunden
+      - 10–15 Sekunden
+      - 20–30 Sekunden
+      - Mehr als 3 Minuten
+    richtig: C
+    erklaerung: 3–5 s Blässe/Schwindel, 10–15 s Bewusstlosigkeit, 20–30 s Krämpfe, 30–60 s Atemstillstand, > 3 min irreversible Hirnschäden.

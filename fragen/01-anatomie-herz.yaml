@@ -1,0 +1,189 @@
+# Fragen zu: 1. Anatomie Herz (Folie = Seitenzahl im Skript)
+titel: "1. Anatomie Herz"
+
+fragen:
+  - folie: 2
+    frage: Welche Arterien führen sauerstoffarmes Blut?
+    antworten:
+      - Aorta
+      - Aa. pulmonales
+      - Koronararterien
+      - Aa. renales
+    richtig: B
+    erklaerung: Einzige Ausnahme unter den Arterien – die 2 Aa. pulmonales führen sauerstoffarmes Blut vom rechten Herzen zur Lunge.
+
+  - folie: 2
+    frage: Wie liegt das Herz im Thorax?
+    antworten:
+      - Vollständig in der linken Thoraxhälfte
+      - Zu 2/3 in der rechten und zu 1/3 in der linken Thoraxhälfte
+      - Zu 2/3 in der linken und zu 1/3 in der rechten Thoraxhälfte, im Mediastinum
+      - Hinter der Speiseröhre, direkt an der Wirbelsäule
+    richtig: C
+    erklaerung: Es liegt im Mediastinum, zu 2/3 links und zu 1/3 rechts, und ist mit dem Zwerchfell verwachsen.
+
+  - folie: 3
+    frage: Welche Klappe liegt zwischen rechtem Vorhof und rechter Kammer?
+    antworten:
+      - Mitralklappe
+      - Trikuspidalklappe
+      - Pulmonalklappe
+      - Aortenklappe
+    richtig: B
+    erklaerung: Die Segelklappen heißen rechts Trikuspidalklappe, links Mitralklappe.
+
+  - folie: 3
+    frage: Was gehört zum Hochdrucksystem?
+    antworten:
+      - Rechte Kammer
+      - Linker Vorhof
+      - Linke Kammer und alle von ihr abgehenden Arterien
+      - Pulmonalvenen
+    richtig: C
+    erklaerung: Alle übrigen Strukturen (Venen, rechtes Herz, Pulmonalgefäße, linker Vorhof) gehören zum Niederdrucksystem.
+
+  - folie: 4
+    frage: Ein Erythrozyt ist in der Niere und will zum Uterus. Welche Klappe passiert er direkt nach der rechten Kammer?
+    antworten:
+      - Trikuspidalklappe
+      - Mitralklappe
+      - Pulmonalklappe
+      - Aortenklappe
+    richtig: C
+    erklaerung: "V. renalis → V. cava inferior → rechter Vorhof → Trikuspidalklappe → rechte Kammer → Pulmonalklappe → Lunge → linker Vorhof → Mitralklappe → linke Kammer → Aortenklappe → Aorta."
+
+  - folie: 4
+    frage: Welche Reihenfolge der Wandschichten des Herzens ist richtig (von innen nach außen)?
+    antworten:
+      - Myokard – Endokard – Epikard – Perikard
+      - Endokard – Myokard – Epikard – Perikard
+      - Perikard – Myokard – Endokard – Epikard
+      - Endokard – Epikard – Myokard – Perikard
+    richtig: B
+    erklaerung: Die linke Kammer hat das dickste Myokard, da sie den gesamten Körper versorgt.
+
+  - folie: 5
+    frage: Welche Aussage zu den Koronararterien trifft zu?
+    antworten:
+      - Sie entspringen aus der A. pulmonalis.
+      - Sie sind die ersten Arterien, die von der Aorta abgehen.
+      - Ihre Kollateralen reichen bei einem Verschluss als Versorgung aus.
+      - Sie liegen innerhalb des Endokards.
+    richtig: B
+    erklaerung: Sie liegen unter dem Epikard und sind funktionelle Endarterien – die Kollateralen reichen bei Verschluss nicht aus.
+
+  - folie: 6
+    frage: Wie verhalten sich die Klappen während der Systole?
+    antworten:
+      - Alle vier Klappen sind geschlossen.
+      - Trikuspidal- und Mitralklappe offen, Aorten- und Pulmonalklappe geschlossen
+      - Trikuspidal- und Mitralklappe geschlossen, Aorten- und Pulmonalklappe offen
+      - Alle vier Klappen sind offen.
+    richtig: C
+    erklaerung: In der Diastole ist es umgekehrt. Die Klappen öffnen und schließen passiv durch den Druck des Blutes.
+
+  - folie: 6
+    frage: Wodurch entsteht der 2. Herzton?
+    antworten:
+      - Schluss von Trikuspidal- und Mitralklappe
+      - Anspannung des Myokards
+      - Schluss von Aorten- und Pulmonalklappe
+      - Blutverwirbelung an einer Stenose
+    richtig: C
+    erklaerung: Der 1. Herzton entsteht durch den Schluss der Segelklappen plus Anspannungston; der 2. ist kürzer und heller.
+
+  - folie: 7
+    frage: Der Sinusknoten fällt aus. Mit welcher Frequenz übernimmt der AV-Knoten?
+    antworten:
+      - Ca. 80 Schläge/min
+      - Ca. 40–60 Schläge/min
+      - Ca. 20–40 Schläge/min
+      - Ca. 100–120 Schläge/min
+    richtig: B
+    erklaerung: Sinusknoten ca. 80/min, AV-Knoten 40–60/min, His-Bündel 20–40/min.
+
+  - folie: 8
+    frage: Was beschreibt die Windkesselfunktion?
+    antworten:
+      - Die Venenklappen verhindern den Rückfluss des Blutes.
+      - Elastische Arterien dehnen sich in der Systole und geben das Blut in der Diastole gleichmäßig weiter.
+      - Die Lunge saugt in der Einatmung Blut zum Herzen.
+      - Die Kammer füllt sich in der Diastole.
+    richtig: B
+
+  - folie: 9
+    frage: Wie viel Blut wirft das Herz eines Erwachsenen in Ruhe ungefähr pro Minute aus?
+    antworten:
+      - Ca. 1 Liter
+      - Ca. 5 Liter
+      - Ca. 10 Liter
+      - Ca. 25 Liter
+    richtig: B
+    erklaerung: 70 ml × 70 Schläge ≈ 4,9 l/min; bei Sport bis zu 25 l/min.
+
+  - folie: 9
+    frage: Welche Kurzschlussverbindungen umgehen beim Fetus den Lungenkreislauf?
+    antworten:
+      - Offenes Foramen ovale
+      - Offener Ductus botalli
+      - Ventrikelseptumdefekt
+      - Aortenisthmus
+    richtig: [A, B]
+    erklaerung: Mit den ersten Atemzügen kehren sich die Druckverhältnisse um, das Foramen ovale schließt sich, der Ductus botalli wird bindegewebig umgebaut.
+
+  - folie: 10
+    frage: Wo auskultiert man die Aortenklappe?
+    antworten:
+      - 2. ICR rechts parasternal
+      - 2. ICR links parasternal
+      - 4. ICR rechts parasternal
+      - 3. ICR links parasternal
+    richtig: A
+    erklaerung: "„Anton Pulman trinkt Milch um 22.44 Uhr“: Aorta 2. ICR re, Pulmonal 2. ICR li, Trikuspidal 4. ICR re, Mitral 4. ICR li."
+
+  - folie: 10
+    frage: Wo liegt der Erb’sche Punkt, an dem man die Auskultation beginnt?
+    antworten:
+      - 5. ICR links medioklavikular
+      - 3. ICR links parasternal
+      - 2. ICR rechts parasternal
+      - 4. ICR rechts parasternal
+    richtig: B
+    erklaerung: Auf ihn werden die Töne aller 4 Klappen projiziert.
+
+  - folie: 11
+    frage: Welche Klappenfehler verursachen ein Systolikum?
+    antworten:
+      - Aortenklappenstenose
+      - Mitralklappeninsuffizienz
+      - Mitralklappenstenose
+      - Aortenklappeninsuffizienz
+    richtig: [A, B]
+    erklaerung: Systolikum = Stenose der Taschenklappen oder Insuffizienz der Segelklappen. Diastolikum = umgekehrt.
+
+  - folie: 12
+    frage: Man hört am 2. ICR rechts während der Systole ein Geräusch. Welche Klappenveränderung ist zu erwarten?
+    antworten:
+      - Aortenklappeninsuffizienz
+      - Aortenklappenstenose
+      - Pulmonalklappenstenose
+      - Mitralklappeninsuffizienz
+    richtig: B
+
+  - folie: 12
+    frage: Man hört am 4. ICR links während der Diastole ein Geräusch. Welche Klappenveränderung ist zu erwarten?
+    antworten:
+      - Mitralklappenstenose
+      - Mitralklappeninsuffizienz
+      - Trikuspidalklappenstenose
+      - Aortenklappeninsuffizienz
+    richtig: A
+
+  - folie: 12
+    frage: Man hört am 2. ICR links während der Diastole ein Geräusch. Welche Klappenveränderung ist zu erwarten?
+    antworten:
+      - Pulmonalklappenstenose
+      - Aortenklappeninsuffizienz
+      - Pulmonalklappeninsuffizienz
+      - Mitralklappenstenose
+    richtig: C
